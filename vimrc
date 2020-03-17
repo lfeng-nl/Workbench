@@ -12,7 +12,7 @@ set background=dark
 syntax enable                               "开启语法高亮功能
 syntax on
 set cursorline                              "高亮当前行
-set scrolloff=5           " 屏幕顶/底部保持 5 行文本
+set scrolloff=5                             " 屏幕顶/底部保持 5 行文本
 set matchtime=1                             "匹配高亮时间（十分之一秒）
 set tabstop=4                               "设置tab宽度
 set hlsearch                                "设置搜索高亮
@@ -24,7 +24,7 @@ set shiftwidth=4                            "设置自动对齐空格数
 set smarttab                                "设置退格键时可以删除4个空格
 set softtabstop=4
 set expandtab                               "将tab键自动转换为空格
-set smartindent           " 智能缩进          si
+set smartindent                             " 智能缩进
 set encoding=utf-8                          "设置编码方式
 set fenc=utf-8
 set virtualedit=onemore                     "让光标超出一个字符
@@ -44,9 +44,9 @@ filetype on                                  "检测文件类型
 filetype indent on                           "针对不同的文件采取不同的缩进方式
 filetype plugin on                           "允许插件
 filetype plugin indent on                    "启动智能补全
-set nowrap                " 禁止折行
-set laststatus=2          " 显示状态栏
-set wildmenu              " Vim 命令行提示
+set nowrap                                   " 禁止折行
+set laststatus=2                             " 显示状态栏
+set wildmenu                                 " Vim 命令行提示
 
 
 "********************************************************
@@ -59,6 +59,7 @@ inoremap <C-h> <left>
 inoremap <C-l> <right>
 inoremap <C-j> <down>
 inoremap <C-k> <up>
+inoremap jj <esc>
 
 vnoremap <c-c> y
 
