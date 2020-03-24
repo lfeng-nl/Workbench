@@ -19,7 +19,6 @@ set hlsearch                                "设置搜索高亮
 set ignorecase                              "设置搜索时忽略大小写
 set incsearch                               "再键入时搜索
 set backspace=indent,eol,start              "配置backspace的工作方式
-set mouse=a                                 "设置在vim中可以使用鼠标
 set shiftwidth=4                            "设置自动对齐空格数
 set smarttab                                "设置退格键时可以删除4个空格
 set softtabstop=4
@@ -47,6 +46,8 @@ filetype plugin indent on                    "启动智能补全
 set nowrap                                   " 禁止折行
 set laststatus=2                             " 显示状态栏
 set wildmenu                                 " Vim 命令行提示
+set paste                                    " 粘贴模式
+set pastetoggle=<F9>
 
 
 "********************************************************
