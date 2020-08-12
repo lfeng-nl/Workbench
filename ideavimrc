@@ -1,0 +1,56 @@
+" 设置
+let mapleader=' '                         " 映射和leader 键到<Space>
+set hlsearch                              " 搜索时高亮
+set incsearch                             " 边输入边搜索
+set ignorecase                            " 搜索忽略大小写
+set scrolloff=3                           " 保持光标上下最少行数
+set smartcase
+set encoding=utf-8
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 普通模式下映射 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <Space>nh :nohlsearch<CR>        " 清除高亮显示
+
+" 窗口控制
+nnoremap <Space>q <C-W>w
+nnoremap <Space>ww <C-W>w
+nnoremap <Space>wj <C-W>j
+nnoremap <Space>wk <C-W>k
+nnoremap <Space>wh <C-W>h
+nnoremap <Space>wl <C-W>l
+nnoremap <Space>w- <C-W>s
+nnoremap <Space>w\ <C-W>v
+
+" run
+nnoremap <Space>rr :action Run<CR>
+nnoremap <Space>rc :action ChooseRunConfiguration<CR>
+
+" rename
+nnoremap <Space>re :action RenameElement<CR>
+nnoremap <Space>rf :action RenameFile<CR>
+
+" 导航
+nnoremap ga :action GotoAction<CR>
+nnoremap gc :action GotoClass<CR>
+nnoremap gf :action GotoFile<CR>
+nnoremap gs :action GotoSymbol<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gb :action Back<CR>
+nnoremap gp :action Forward<CR>
+
+" 移动
+nnoremap H ^
+nnoremap L $
+nnoremap J 5j
+nnoremap K 5k
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 插入模式下映射
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Left>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
